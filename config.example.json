@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "mcp-laundryconnect": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-laundryconnect"
+            ],
+            "env": {
+                "WASHING_MACHINE_API_URL": "https://api.sqinsights.com/washAlert/machines/XXXXX",
+                "ALLIANCELS_ORGANIZATION_ID": "XXXX"
+            }
+        }
+    }
+}

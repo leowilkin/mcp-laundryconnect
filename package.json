@@ -1,0 +1,31 @@
+{
+  "name": "mcp-laundryconnect",
+  "version": "1.0.0",
+  "description": "Query your laundry machine's status using Claude. Supported at some New England colleges.",
+  "keywords": [
+    "mcp"
+  ],
+  "homepage": "https://github.com/leowilkin/mcp-laundryconnect#readme",
+  "bugs": {
+    "url": "https://github.com/leowilkin/mcp-laundryconnect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leowilkin/mcp-laundryconnect.git"
+  },
+  "license": "MIT",
+  "author": "Leo Wilkin",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.76"
+  },
+  "bin": {
+    "mcp-laundryconnect": "index.js"
+  }
+}

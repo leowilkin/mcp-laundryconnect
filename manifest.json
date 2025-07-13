@@ -1,0 +1,58 @@
+{
+    "dxt_version": "0.1",
+    "name": "mcp-laundryconnect",
+    "display_name": "LaundryConnect",
+    "version": "1.0.0",
+    "description": "Monitor your laundry machines (LaundryConnect) using natural language & AI",
+    "author": {
+        "name": "Leo Wilkin",
+        "email": "leo@wilkin.xyz",
+        "url": "https://wilkin.xyz"
+    },
+    "homepage": "https://github.com/leowilkin/mcp-laundryconnect#readme",
+    "documentation": "https://github.com/leowilkin/mcp-laundryconnect#readme",
+    "icon": "logo.jpg",
+    "server": {
+        "type": "node",
+        "entry_point": "index.js",
+        "mcp_config": {
+            "command": "node",
+            "args": ["${__dirname}/index.js"],
+            "platforms": {
+                "win32": {
+                    "command": "node.exe"
+                }
+            }
+        }
+    },
+    "tools": [
+        {
+            "name": "washing_machine_status",
+            "description": "Get the current status of all washing machines and dryers in the laundry facility"
+        }
+    ],
+    "keywords": [
+        "mcp"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leowilkin/mcp-laundryconnect"
+    },
+    "user_config": {
+        "WASHING_MACHINE_API_URL": {
+            "type": "string",
+            "title": "Washing Machine API URL",
+            "description": "The API URL for the washing machine status.",
+            "required": true,
+            "sensitive": false
+        },
+        "ALLIANCELS_ORGANIZATION_ID": {
+            "type": "string",
+            "title": "AllianceLS Organization ID",
+            "description": "The organization ID for AllianceLS.",
+            "required": true,
+            "sensitive": false
+        }
+    }
+}
